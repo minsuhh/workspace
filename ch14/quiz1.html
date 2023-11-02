@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      display: inline-block;
+      padding: 0 20px 30px 20px;
+      margin: 15px;
+      border: 1px solid #ccc;
+      line-height: 2;
+    }
+
+    div h3 {
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- for문을 사용하지 않고 while문을 사용하여 구구단 작성 -->
+  <h1>구구단</h1>
+
+  <script>
+    var i = 1;
+
+    while (i <= 9) {
+      document.write('<div>')
+      document.write('<h3>' + i + '단</h3>')
+     
+      j = 1;
+      while (j <= 9) {
+        document.write(i + 'X' + j + '=' + (i * j) + '<br/>')
+        j++
+      }
+     i++
+      document.write('</div>')
+    }
+
+
+  </script>
+</body>
+
+</html>
