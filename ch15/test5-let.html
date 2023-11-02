@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // test1
+    var name = '홍길동'
+    function myFun() {
+      var name = '김길동'
+      document.write('inner fun, top : ' + name + <br/>)
+      if(true){
+        var name = '이길동'
+        document.write('inner fun, if : ' + name + <br/>)
+      }
+      document.write('inner fun, middle : ' + name + <br/>)
+      for(var i = 1; i<=1; i++){
+        var name = '박길동'
+        document.write('inner fun, for : ' + name + <br/>)
+      }
+      document.write('inner fun, bottom : ' + name + <br/>)
+    }
+    myFun()
+    document.write('outer fun : ' + name + <br/>)
+  </script></body>
+</html>
